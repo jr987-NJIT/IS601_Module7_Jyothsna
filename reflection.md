@@ -36,6 +36,8 @@ This project successfully containerized a Python-based QR Code Generator applica
 
 ---
 
-**Author**: [Your Name]  
+**Author**: Jyothsna Ravi  
 **Date**: October 27, 2025  
-**Course**: IS601 Module 7
+**Course**: IS601 Module 7  
+**GitHub**: https://github.com/jr987-NJIT/IS601_Module7_Jyothsna  
+**DockerHub**: https://hub.docker.com/r/jyothsnaravi/qr-code-generator-app
