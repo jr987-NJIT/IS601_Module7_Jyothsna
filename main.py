@@ -40,16 +40,23 @@ def parse_args() -> argparse.Namespace:
 
 def main():
     args = parse_args()
+    print("=" * 60)
+    print("QR Code Generator Application")
+    print("=" * 60)
     setup_dirs()
     setup_logging()
+    print(f"📝 Directories initialized: logs/ and qr_codes/")
+    print(f"🔗 Input URL: {args.url}")
     logging.info(f"Generating QR for {args.url}")
+    print(f"⚙️  Generating QR code...")
     try:
         out = generate_qr(args.url, args.out)
-        print(f"Saved QR to {out}")
+        print(f"✅ Success! QR code saved to: {out}")
         logging.info(f"Saved QR to {out}")
+        print("=" * 60)
     except Exception as e:
         logging.exception("Failed to generate QR code")
-        print("Error: failed to generate QR code. See logs/app.log for details.")
+        print("❌ Error: failed to generate QR code. See logs/app.log for details.")
         raise
 
 
