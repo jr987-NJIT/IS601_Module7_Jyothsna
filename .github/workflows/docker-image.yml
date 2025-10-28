@@ -21,6 +21,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
+          context: .
           push: true
-          tags: jr987-NJIT/qr-code-generator-app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/qr-code-generator-app:latest
           file: ./Dockerfile
