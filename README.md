@@ -37,10 +37,10 @@ docker run -d --name qr-generator -v ${PWD}\\qr_codes:/app/qr_codes qr-code-gene
 Notes about GitHub Actions
 
 The workflow `docker-image.yml` uses the following secrets which you must set in your GitHub repository settings:
-- `DOCKERHUB_USERNAME`
+- `DOCKERHUB_USERNAME` (your DockerHub username - must be lowercase)
 - `DOCKERHUB_TOKEN` (use a Docker Hub access token or password)
 
-The workflow builds and pushes `jr987-NJIT/qr-code-generator-app:latest`. Update the image name if you want a different DockerHub repository.
+The workflow builds and pushes `<your-username>/qr-code-generator-app:latest` using your DOCKERHUB_USERNAME secret.
 
 Repository SSH link (provided by user): `git@github.com:jr987-NJIT/IS601_Module7_Jyothsna.git`
 
