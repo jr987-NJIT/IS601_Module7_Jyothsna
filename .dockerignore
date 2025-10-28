@@ -1,0 +1,38 @@
+# Git files
+.git
+.gitignore
+
+# Python cache
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Documentation
+README.md
+SUBMISSION_GUIDE.md
+reflection.md
+
+# GitHub workflows
+.github/
+
+# Generated files (these will be created inside container)
+logs/
+qr_codes/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

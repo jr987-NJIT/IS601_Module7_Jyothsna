@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+env/
+venv/
+
+# Logs and generated QR codes
+logs/
+qr_codes/
+
+# Environment variables
+.env
+
+# Editor files
+.vscode/
+.idea/
